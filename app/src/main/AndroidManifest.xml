@@ -10,15 +10,24 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="SUA_API_KEY_AQUI" />
+            android:value="AIzaSyBC-i68mjjCsbb-xmLEB47iGS5dVNqlrhA" />
 
-        <activity
+        <activity android:name=".SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:exported="true"/>
+
+        <!--<activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
+        </activity>-->
     </application>
 </manifest>
